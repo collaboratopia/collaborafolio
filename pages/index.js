@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Navbar from '../components/navbar/Navbar.js'
+import Navbar from "../components/navbar/Navbar";
 
 export default function Home() {
   return (
@@ -9,11 +9,15 @@ export default function Home() {
         <title>Collaborafolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <navbar />
+      <header>
+        <navbar></navbar>
+      </header>
       <main>
         <h1 className={styles.title}>
           Welcome to <a href="https://github.com/Collaboratopia/Collaborafolio" target="_blank" rel="noopener noreferrer">Collaborafolio</a>
         </h1>
+        <br />
+        <button>Hello World</button>
       </main>
 
       <footer>

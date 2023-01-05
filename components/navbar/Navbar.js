@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import NavLink from "./NavLink";
 import Link from "next/link";
-// import app from "../../config/app.json";
+import app from "../../config/app.json";
 import Image from "next/legacy/image";
 import { FaGithub } from "react-icons/fa";
 import { IconContext } from "react-icons";
@@ -43,7 +43,7 @@ export default function Navbar() {
               <div className="flex-shrink-0">
                 <Link href="/">
                   <Image
-                    src="logo.png"
+                    src="/logo192.png"
                     alt="EddieHub logo"
                     width={32}
                     height={32}
@@ -60,7 +60,7 @@ export default function Navbar() {
             </div>
             <div className="hidden md:block">
               <div className="ml-4 flex items-center md:ml-6">
-                {/* <span className="text-gray-400">v{app.version}</span> */}
+                <span className="text-gray-400">v{app.version}</span>
                 <div className="ml-3 relative">
                   <a
                     href="https://github.com/EddieHubCommunity/LinkFree"
@@ -138,7 +138,7 @@ export default function Navbar() {
           <div className="pt-4 pb-3 border-t border-gray-700">
             <div className="flex items-center px-5">
               <div className="flex items-center md:ml-6">
-                {/* <span className="text-gray-400">v{app.version}</span> */}
+                <span className="text-gray-400">v{app.version}</span>
                 <div className="ml-3 relative">
                   <a
                     href="https://github.com/EddieHubCommunity/LinkFree"
