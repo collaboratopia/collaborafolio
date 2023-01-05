@@ -1,7 +1,7 @@
 import Script from "next/script";
 
 import Navbar from "../navbar/Navbar";
-// import Footer from "../Footer";
+import Footer from "../Footer";
 
 export default function MultiLayout({ children }) {
   return (

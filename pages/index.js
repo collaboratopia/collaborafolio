@@ -9,40 +9,8 @@ export default function Home() {
         <title>Collaborafolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <navbar />
       <main>
-      <header class="header-area">
-  
-  <div class="navbar-area">
-    <div class="container">
-      <nav class="site-navbar">
-        
-        <a href="#home" class="site-logo">logo</a>
-
-        
-        <ul>
-          <li><a href="#">home</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">service</a></li>
-          <li><a href="#">contact</a></li>
-        </ul>
-
-        
-        <button class="nav-toggler">
-          <span></span>
-        </button>
-      </nav>
-    </div>
-  </div>
-
-  <div class="intro-area">
-    <div class="container">
-      <h2>Responsive Navbar with pure JavaScript</h2>
-      <p>Please resize your browser and see the result</p>
-    </div>
-  </div>
-</header>
-
         <h1 className={styles.title}>
           Welcome to <a href="https://github.com/Collaboratopia/Collaborafolio" target="_blank" rel="noopener noreferrer">Collaborafolio</a>
         </h1>
