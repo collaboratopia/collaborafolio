@@ -1,2 +1,93 @@
-# collaborafolio
-Portfolio Website. To be on the site you just need to make a profile and submit it as a PR.
+<!-- [![Open in GitPod](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/collaboratopia/collaborafolio) ![Uptime](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FEddieHubCommunity%2Fmonitoring%2Fmaster%2Fapi%2Flink-free%2Fuptime.json) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/EddieHubCommunity/LinkFree) ![GitHub repo size](https://img.shields.io/github/repo-size/EddieHubCommunity/LinkFree) -->
+
+# What is Collaborafolio?
+
+Collaborafolio is an Open Source portfolio service. A platform where people in tech and art can have a single place to showcase their work to push their career.
+
+Here is an example of a Collaborafolio Profile 
+
+![Example profile on LinkFree](https://user-images.githubusercontent.com/624760/207048057-0f8cc74f-cc50-4cb3-b1a9-7e37f1a66d2c.png)
+
+## 🛠️ Quickstart
+
+You have 4 options to contribute to the repo, please pick your favourite from:
+
+1. GitHub UI (recommended for adding/editing your profile)
+2. Gitpod
+3. Local development
+4. Local development with Docker Compose
+
+Brief documentation below, but full documentation can be found here https://linkfree.eddiehub.io/docs
+
+### GitHub UI
+
+This is great if you only want to add your Profile or make changes to it.
+
+Here is the **QuickStart** guide to add your profile https://linkfree.eddiehub.io/docs/quickstart
+
+*note: give extra attention to json formatting and the GitHub Action after you create the Pull Request*
+
+### Gitpod
+
+In the cloud free development environment which will have all the dependencies you need (for example MongoDB).
+
+You can use Gitpod in the cloud [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/EddieHubCommunity/LinkFree/)
+
+### Local development
+
+This environment is fully on computer, and requires each dependency (for example MongoDB) to be installed and setup, but gives you the most flexiblity for customisation.
+
+#### Prerequisites
+
+Before contributing or adding a new feature, please make sure you have already installed the following tools:
+
+- [NodeJs](https://nodejs.org/en/download/) (Works with Node LTS version v16.17.0)
+- [MongoDB](https://www.mongodb.com/home)
+- Optional [NVM](https://github.com/nvm-sh/nvm): Switch Node version by using `nvm use` (on Windows, use `nvm use v16.17.0`). If this is not installed, run `nvm install v16.17.0`.
+
+#### Commands
+
+You can set this up locally with the following steps:
+
+1. copy the `.env.example` file to `.env` and update any details required
+1. mongodb is required, it is possible to use `docker-compose up` to start the mongodb service
+1. `npm ci`
+1. `npm run dev`
+
+### Local development with Docker Compose
+
+This will allow you to run your favourite IDE but not have to install any dependencies on your computer like NodeJS and MongoDB.
+
+#### Prerequisites
+
+- Docker
+- Docker Compose
+
+#### Commands
+
+1. `docker-compose up`
+
+### 🙂 How to add YOUR Profile
+
+Step by step quickstart guide can be found in the full docs here https://linkfree.eddiehub.io/docs/quickstart
+
+---
+
+Looking for inspiration? You can view the following profiles for an example:
+
+- [Eddie Jaoude](https://github.com/EddieHubCommunity/LinkFree/blob/main/data/eddiejaoude.json)
+- [Krupali Trivedi || Chai](https://github.com/EddieHubCommunity/LinkFree/blob/main/data/krupalitrivedi.json)
+- [Pradumna Saraf](https://github.com/EddieHubCommunity/LinkFree/blob/main/data/Pradumnasaraf.json)
+
+## 🛡️ License
+
+LinkFree is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🧰 Contributing
+
+- Contributions make the open source community such an amazing place to learn, inspire, and create.
+- Any contributions you make are **truly appreciated**.
+
+## 🙏 Support
+
+Don't forget to leave a star ⭐️
