@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My Portfolio | Collaborafolio</title>
+  <style>
+    /* Styles for the tab buttons */
+    .tab {
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-bottom: none;
+      padding: 14px 16px;
+      cursor: pointer;
+    }
+    .tab.active {
+      background-color: #f1f1f1;
+    }
+    /* Styles for the tab content */
+    .tab-content {
+      border: 1px solid #ccc;
+      border-top: none;
+      padding: 20px;
+    }
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  background-color: #333;
+  color: #fff;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.nav-toggle-label {
+  display: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-toggle-label span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+
+.nav-items {
+  display: flex;
+  list-style: none;
+  margin-right: 20px;
+}
+
+.nav-items li {
+  margin: 0 15px;
+}
+
+.nav-items a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.nav-items a:hover {
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle-label {
+    display: block;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  .nav-items.open {
+    display: flex;
+    flex-direction: column;
+    margin: 70px 0 0 0;
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .nav-items li {
+    margin: 0;
+  }
+
+  .nav-items a {
+    padding: 10px;
+  }
+}
+
+
+</style>
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">Logo</a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+        <ul class="nav-items">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      
+            
+  <!-- Tabs for each section of the portfolio -->
+  <div class="tabs">
+    <div class="tab active" id="tab-about">About</div>
+    <div class="tab" id="tab-projects">Projects</div>
+    <div class="tab" id="tab-contact">Contact</div>
+  </div>
+  <!-- Tab content for the "About" section -->
+  <div class="tab-content" id="content-about">
+    <h1>About Me</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.</p>
+  </div>
+  <!-- Tab content for the "Projects" section -->
+  <div class="tab-content" id="content-projects">
+    <h1>My Projects</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.</p>
+  </div>
+  <!-- Tab content for the "Contact" section -->
+  <div class="tab-content" id="content-contact">
+    <h1>Contact Me</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.</p>
+  </div>
+  <script>
+    // Get all tab buttons
+    var tabButtons = document.querySelectorAll('.tab');
+    // Get all tab content
+    var tabContents = document.querySelectorAll('.tab-content');
+    // Add a click event listener to each tab button
+    tabButtons.forEach(function(tabButton) {
+      tabButton.addEventListener('click', function() {
+        // Remove the "active" class from all tab buttons
+        tabButtons.forEach(function(button) {
+          button.classList.remove('active');
+        });
+        // Add the "active" class to the clicked tab button
+        tabButton.classList.add('active');
+        // Get the ID of the clicked tab button
+        var tabId = tabButton.id;
+        // Hide all tab content
+        tabContents.forEach(function(tabContent) {
+          tabContent.style.display = 'none';
+        });
+        // Show the tab content for the clicked tab
+        document.getElementById('content-' + tabId.split('-')[1]).style.display = 'block';
+      });
+    });
+  </script>
+</body>
+</html>
