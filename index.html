@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My Portfolio | Collaborafolio</title>
+  <style>
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+        background-color: #333;
+        color: #fff;
+    }
+    .logo {
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+        margin-left: 20px;
+    }
+    .nav-toggle-label {
+        display: none;
+        cursor: pointer;
+        position: relative;
+    }
+    .nav-toggle-label span {
+        display: block;
+        width: 30px;
+        height: 4px;
+        background-color: #fff;
+        margin-bottom: 5px;
+    }
+
+    .nav-items {
+        display: flex;
+        list-style: none;
+        margin-right: 20px;
+    }  
+
+    .nav-items li {
+        margin: 0 15px;
+    }
+
+    .nav-items a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        transition: all 0.3s ease;
+    }
+
+    .nav-items a:hover {
+        color: #ccc;
+    }
+
+    @media (max-width: 768px) {
+        .nav-toggle-label {
+            display: block;
+        }
+        .nav-items {
+            display: none;
+        }
+        .nav-items.open {
+            display: flex;
+            flex-direction: column;
+            margin: 70px 0 0 0;
+            background-color: #333;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
+        .nav-items li {
+            margin: 0;
+        }
+        .nav-items a {
+            padding: 10px;
+        }
+    }
+</style>
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">Logo</a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+        <ul class="nav-items">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+</body>
+</html>
