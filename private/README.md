@@ -4,9 +4,9 @@
 
 Collaborafolio is an Open Source portfolio service. A platform where people in tech and art can have a single place to showcase their work to push their career.
 
-Here is an example of a Collaborafolio Profile 
+Here is an example of a Collaborafolio Profile
 
-![Example profile on LinkFree](https://user-images.githubusercontent.com/624760/207048057-0f8cc74f-cc50-4cb3-b1a9-7e37f1a66d2c.png)
+<!-- ![Example profile on LinkFree](https://user-images.githubusercontent.com/624760/207048057-0f8cc74f-cc50-4cb3-b1a9-7e37f1a66d2c.png) -->
 
 ## 🛠️ Quickstart
 
@@ -15,23 +15,23 @@ You have 4 options to contribute to the repo, please pick your favourite from:
 1. GitHub UI (recommended for adding/editing your profile)
 2. Gitpod
 3. Local development
-4. Local development with Docker Compose
+<!-- 4. Local development with Docker Compose -->
 
-Brief documentation below, but full documentation can be found here https://linkfree.eddiehub.io/docs
+<!-- Brief documentation below, but full documentation can be found here https://linkfree.eddiehub.io/docs -->
 
-### GitHub UI
+<!-- ### GitHub UI
 
 This is great if you only want to add your Profile or make changes to it.
 
 Here is the **QuickStart** guide to add your profile https://linkfree.eddiehub.io/docs/quickstart
 
-*note: give extra attention to json formatting and the GitHub Action after you create the Pull Request*
-
+*note: give extra attention to json formatting and the GitHub Action after you create the Pull Request* -->
+<!--
 ### Gitpod
 
 In the cloud free development environment which will have all the dependencies you need (for example MongoDB).
 
-You can use Gitpod in the cloud [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/EddieHubCommunity/LinkFree/)
+You can use Gitpod in the cloud [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/EddieHubCommunity/LinkFree/) -->
 
 ### Local development
 
@@ -42,19 +42,19 @@ This environment is fully on computer, and requires each dependency (for example
 Before contributing or adding a new feature, please make sure you have already installed the following tools:
 
 - [NodeJs](https://nodejs.org/en/download/) (Works with Node LTS version v16.17.0)
-- [MongoDB](https://www.mongodb.com/home)
-- Optional [NVM](https://github.com/nvm-sh/nvm): Switch Node version by using `nvm use` (on Windows, use `nvm use v16.17.0`). If this is not installed, run `nvm install v16.17.0`.
+<!-- - [MongoDB](https://www.mongodb.com/home)
+- Optional [NVM](https://github.com/nvm-sh/nvm): Switch Node version by using `nvm use` (on Windows, use `nvm use v16.17.0`). If this is not installed, run `nvm install v16.17.0`. -->
 
-#### Commands
+<!-- #### Commands
 
 You can set this up locally with the following steps:
 
 1. copy the `.env.example` file to `.env` and update any details required
 1. mongodb is required, it is possible to use `docker-compose up` to start the mongodb service
 1. `npm ci`
-1. `npm run dev`
+1. `npm run dev` -->
 
-### Local development with Docker Compose
+<!-- ### Local development with Docker Compose
 
 This will allow you to run your favourite IDE but not have to install any dependencies on your computer like NodeJS and MongoDB.
 
@@ -65,9 +65,9 @@ This will allow you to run your favourite IDE but not have to install any depend
 
 #### Commands
 
-1. `docker-compose up`
+1. `docker-compose up` -->
 
-### 🙂 How to add YOUR Profile
+<!-- ### 🙂 How to add YOUR Profile
 
 Step by step quickstart guide can be found in the full docs here https://linkfree.eddiehub.io/docs/quickstart
 
@@ -77,11 +77,11 @@ Looking for inspiration? You can view the following profiles for an example:
 
 - [Eddie Jaoude](https://github.com/EddieHubCommunity/LinkFree/blob/main/data/eddiejaoude.json)
 - [Krupali Trivedi || Chai](https://github.com/EddieHubCommunity/LinkFree/blob/main/data/krupalitrivedi.json)
-- [Pradumna Saraf](https://github.com/EddieHubCommunity/LinkFree/blob/main/data/Pradumnasaraf.json)
+- [Pradumna Saraf](https://github.com/EddieHubCommunity/LinkFree/blob/main/data/Pradumnasaraf.json) -->
 
 ## 🛡️ License
 
-LinkFree is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+LinkFree is licensed under the GPL V3.0 License - see the [LICENSE](LICENSE) file for details.
 
 ## 🧰 Contributing
 
