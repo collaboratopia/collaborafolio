@@ -17,7 +17,7 @@ export default function Home() {
           Welcome to <a href="https://github.com/Collaboratopia/Collaborafolio" target="_blank" rel="noopener noreferrer">Collaborafolio</a>
         </h1>
         <br />
-        <button>Hello World</button>
+        <button>Hello World</button><p>Tests</p>
       </main>
 
       <footer>
