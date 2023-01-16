@@ -94,4 +94,10 @@
   background-color: rgb(175, 175, 175);
   border-radius: 10px;
   padding: 4px;
+  transition: 1s;
+}
+
+.button:hover {
+  background-color: rgb(13, 151, 8);
+  transition: 1s;
 }
