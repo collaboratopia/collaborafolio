@@ -2,13 +2,13 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Navbar from "../components/Navbar.js";
 
-username={data.username}
 
 export default function Home() {
+  username={data.username}
   return (
     <div className={styles.container}>
       <Head>
-        <title>[username] | Collaborafolio</title>
+        <title>{username} | Collaborafolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
