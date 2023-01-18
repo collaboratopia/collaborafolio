@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>{user} | Collaborafolio</title>
+        <title>user | Collaborafolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
