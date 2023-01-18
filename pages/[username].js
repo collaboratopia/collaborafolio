@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar.js";
 
 
 export default function Home() {
-  username={data.username}
+//   username={data.username}
   return (
     <div className={styles.container}>
       <Head>
