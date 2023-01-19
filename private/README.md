@@ -81,7 +81,7 @@ Looking for inspiration? You can view the following profiles for an example:
 
 ## 🛡️ License
 
-LinkFree is licensed under the GPL V3.0 License - see the [LICENSE](LICENSE) file for details.
+Collaborafolio is licensed under the GPL V3.0 License - see the [LICENSE](LICENSE) file for details.
 
 ## 🧰 Contributing
 
