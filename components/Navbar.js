@@ -3,6 +3,7 @@ import styles from '../styles/Navbar.module.css';
 import { FaGithub } from "react-icons/fa";
 import { FaTwitter} from"react-icons/fa";
 import { IconContext } from "react-icons";
+import app from '../config/app.json';
 // import Tooltip from './Tooltip';
 
 
@@ -40,7 +41,8 @@ const Navbar = () => {
               <a className={styles.navbarItem} href="/popular">Popular</a>
               <a className={styles.navbarItem} href="/search">Search</a>
               <a className={styles.navbarItem} href="https://linuxgamer.github.io/videocentral">Docs</a>
-              <div className={styles.navbarItem}>
+	      <a className={styles.navbarItem} href=""><span>v{app.version}</span></a>
+		  <div className={styles.navbarItem}>
                 <a href="https://github.com/Collaboratopia/Collaborafolio" target="_blank" rel="noreferrer">
                   <IconContext.Provider value={{color: "white", style: { verticalAlign: "middle" },}}>
                     <FaGithub aria-label="GitHub" />
@@ -64,7 +66,8 @@ const Navbar = () => {
             <a className={styles.navbarItem} href="/popular">Popular</a>
             <a className={styles.navbarItem} href="/search">Search</a>
             <a className={styles.navbarItem} href="https://linuxgamer.github.io/videocentral">Docs</a>
-            <a className={styles.navbarItem} href="https://github.com/Collaboratopia/Collaborafolio" target="_blank" rel="noreferrer"><IconContext.Provider value={{color: "white", style: { verticalAlign: "middle" },}}><FaGithub aria-label="GitHub" /></IconContext.Provider></a>
+	    <span className="text-gray-400">v{app.version}</span>
+		<a className={styles.navbarItem} href="https://github.com/Collaboratopia/Collaborafolio" target="_blank" rel="noreferrer"><IconContext.Provider value={{color: "white", style: { verticalAlign: "middle" },}}><FaGithub aria-label="GitHub" /></IconContext.Provider></a>
             <a href="https://twitter.com/the_linuxgamer" target="_blank" rel="noreferrer" className={styles.navbarItem}>
                   <IconContext.Provider value={{color: "white", style: { verticalAlign: "middle" },}}>
                     <FaTwitter aria-label="Twitter" />
