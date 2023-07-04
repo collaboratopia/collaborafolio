@@ -1,11 +1,11 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Navbar from "../components/Navbar.js";
-import '../data/'{username}'.json';
+import userdata from "../data/[username].json";
 
 
 export default function Home() {
-// username={userdata.username}
+ username={userdata.username}
   return (
     <div className={styles.container}>
       <Head>
