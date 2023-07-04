@@ -5,7 +5,7 @@ import userdata from "../data/[username].json";
 
 
 export default function Home() {
- username={userdata.username}
+ username={userdata.username};
   return (
     <div className={styles.container}>
       <Head>
